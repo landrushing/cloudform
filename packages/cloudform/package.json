@@ -1,5 +1,5 @@
 {
-  "name": "cloudform",
+  "name": "@landrush/cloudform",
   "version": "4.1.0",
   "description": "TypeScript-based imperative way to define AWS CloudFormation templates",
   "main": "packages/cloudform/index.js",

@@ -2,6 +2,7 @@ import { ResourceBase } from '../resource';
 import { Value, List } from '../dataTypes';
 export declare class LaunchTemplateOverrides {
     InstanceType?: Value<string>;
+    WeightedCapacity?: Value<string>;
     constructor(properties: LaunchTemplateOverrides);
 }
 export declare class LifecycleHookSpecification {

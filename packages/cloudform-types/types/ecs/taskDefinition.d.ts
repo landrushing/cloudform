@@ -5,13 +5,27 @@ export declare class LogConfiguration {
     Options?: {
         [key: string]: Value<string>;
     };
+    SecretOptions?: List<Secret>;
     constructor(properties: LogConfiguration);
+}
+export declare class FirelensConfiguration {
+    Options?: {
+        [key: string]: Value<string>;
+    };
+    Type: Value<string>;
+    constructor(properties: FirelensConfiguration);
 }
 export declare class Device {
     ContainerPath?: Value<string>;
     HostPath: Value<string>;
     Permissions?: List<Value<string>>;
     constructor(properties: Device);
+}
+export declare class InferenceAccelerator {
+    DeviceName?: Value<string>;
+    DevicePolicy?: Value<string>;
+    DeviceType?: Value<string>;
+    constructor(properties: InferenceAccelerator);
 }
 export declare class Secret {
     Name: Value<string>;
@@ -33,6 +47,11 @@ export declare class TaskDefinitionPlacementConstraint {
     Type: Value<string>;
     constructor(properties: TaskDefinitionPlacementConstraint);
 }
+export declare class SystemControl {
+    Namespace: Value<string>;
+    Value: Value<string>;
+    constructor(properties: SystemControl);
+}
 export declare class Volume {
     DockerVolumeConfiguration?: DockerVolumeConfiguration;
     Host?: HostVolumeProperties;
@@ -42,7 +61,7 @@ export declare class Volume {
 export declare class Tmpfs {
     ContainerPath?: Value<string>;
     MountOptions?: List<Value<string>>;
-    Size?: Value<number>;
+    Size: Value<number>;
     constructor(properties: Tmpfs);
 }
 export declare class ResourceRequirement {
@@ -77,9 +96,11 @@ export declare class ContainerDefinition {
     Environment?: List<KeyValuePair>;
     Essential?: Value<boolean>;
     ExtraHosts?: List<HostEntry>;
+    FirelensConfiguration?: FirelensConfiguration;
     HealthCheck?: HealthCheck;
     Hostname?: Value<string>;
     Image?: Value<string>;
+    Interactive?: Value<boolean>;
     Links?: List<Value<string>>;
     LinuxParameters?: LinuxParameters;
     LogConfiguration?: LogConfiguration;
@@ -89,12 +110,14 @@ export declare class ContainerDefinition {
     Name?: Value<string>;
     PortMappings?: List<PortMapping>;
     Privileged?: Value<boolean>;
+    PseudoTerminal?: Value<boolean>;
     ReadonlyRootFilesystem?: Value<boolean>;
     RepositoryCredentials?: RepositoryCredentials;
     ResourceRequirements?: List<ResourceRequirement>;
     Secrets?: List<Secret>;
     StartTimeout?: Value<number>;
     StopTimeout?: Value<number>;
+    SystemControls?: List<SystemControl>;
     Ulimits?: List<Ulimit>;
     User?: Value<string>;
     VolumesFrom?: List<VolumeFrom>;
@@ -141,7 +164,9 @@ export declare class LinuxParameters {
     Capabilities?: KernelCapabilities;
     Devices?: List<Device>;
     InitProcessEnabled?: Value<boolean>;
+    MaxSwap?: Value<number>;
     SharedMemorySize?: Value<number>;
+    Swappiness?: Value<number>;
     Tmpfs?: List<Tmpfs>;
     constructor(properties: LinuxParameters);
 }
@@ -169,8 +194,11 @@ export interface TaskDefinitionProperties {
     Cpu?: Value<string>;
     ExecutionRoleArn?: Value<string>;
     Family?: Value<string>;
+    InferenceAccelerators?: List<InferenceAccelerator>;
+    IpcMode?: Value<string>;
     Memory?: Value<string>;
     NetworkMode?: Value<string>;
+    PidMode?: Value<string>;
     PlacementConstraints?: List<TaskDefinitionPlacementConstraint>;
     ProxyConfiguration?: ProxyConfiguration;
     RequiresCompatibilities?: List<Value<string>>;
@@ -180,11 +208,14 @@ export interface TaskDefinitionProperties {
 }
 export default class TaskDefinition extends ResourceBase<TaskDefinitionProperties> {
     static LogConfiguration: typeof LogConfiguration;
+    static FirelensConfiguration: typeof FirelensConfiguration;
     static Device: typeof Device;
+    static InferenceAccelerator: typeof InferenceAccelerator;
     static Secret: typeof Secret;
     static VolumeFrom: typeof VolumeFrom;
     static HostEntry: typeof HostEntry;
     static TaskDefinitionPlacementConstraint: typeof TaskDefinitionPlacementConstraint;
+    static SystemControl: typeof SystemControl;
     static Volume: typeof Volume;
     static Tmpfs: typeof Tmpfs;
     static ResourceRequirement: typeof ResourceRequirement;

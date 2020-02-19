@@ -8,6 +8,7 @@ export declare class Cookies {
 export declare class LambdaFunctionAssociation {
     EventType?: Value<string>;
     LambdaFunctionARN?: Value<string>;
+    IncludeBody?: Value<boolean>;
     constructor(properties: LambdaFunctionAssociation);
 }
 export declare class CacheBehavior {
@@ -72,6 +73,7 @@ export declare class DistributionConfig {
     HttpVersion?: Value<string>;
     Restrictions?: Restrictions;
     CacheBehaviors?: List<CacheBehavior>;
+    OriginGroups?: OriginGroups;
     constructor(properties: DistributionConfig);
 }
 export declare class OriginCustomHeader {
@@ -125,6 +127,35 @@ export declare class Logging {
     Prefix?: Value<string>;
     constructor(properties: Logging);
 }
+export declare class OriginGroupMember {
+    OriginId: Value<string>;
+    constructor(properties: OriginGroupMember);
+}
+export declare class StatusCodes {
+    Quantity: Value<number>;
+    Items: List<Value<number>>;
+    constructor(properties: StatusCodes);
+}
+export declare class OriginGroup {
+    Id: Value<string>;
+    FailoverCriteria: OriginGroupFailoverCriteria;
+    Members: OriginGroupMembers;
+    constructor(properties: OriginGroup);
+}
+export declare class OriginGroupFailoverCriteria {
+    StatusCodes: StatusCodes;
+    constructor(properties: OriginGroupFailoverCriteria);
+}
+export declare class OriginGroups {
+    Quantity: Value<number>;
+    Items?: List<OriginGroup>;
+    constructor(properties: OriginGroups);
+}
+export declare class OriginGroupMembers {
+    Quantity: Value<number>;
+    Items: List<OriginGroupMember>;
+    constructor(properties: OriginGroupMembers);
+}
 export interface DistributionProperties {
     DistributionConfig: DistributionConfig;
     Tags?: List<ResourceTag>;
@@ -145,5 +176,11 @@ export default class Distribution extends ResourceBase<DistributionProperties> {
     static S3OriginConfig: typeof S3OriginConfig;
     static CustomErrorResponse: typeof CustomErrorResponse;
     static Logging: typeof Logging;
+    static OriginGroupMember: typeof OriginGroupMember;
+    static StatusCodes: typeof StatusCodes;
+    static OriginGroup: typeof OriginGroup;
+    static OriginGroupFailoverCriteria: typeof OriginGroupFailoverCriteria;
+    static OriginGroups: typeof OriginGroups;
+    static OriginGroupMembers: typeof OriginGroupMembers;
     constructor(properties: DistributionProperties);
 }

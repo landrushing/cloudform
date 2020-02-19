@@ -11,13 +11,14 @@ export interface DBClusterProperties {
     PreferredMaintenanceWindow?: Value<string>;
     DBSubnetGroupName?: Value<string>;
     PreferredBackupWindow?: Value<string>;
-    MasterUserPassword?: Value<string>;
+    MasterUserPassword: Value<string>;
     VpcSecurityGroupIds?: List<Value<string>>;
-    MasterUsername?: Value<string>;
+    MasterUsername: Value<string>;
     DBClusterParameterGroupName?: Value<string>;
     BackupRetentionPeriod?: Value<number>;
     Tags?: List<ResourceTag>;
+    EnableCloudwatchLogsExports?: List<Value<string>>;
 }
 export default class DBCluster extends ResourceBase<DBClusterProperties> {
-    constructor(properties?: DBClusterProperties);
+    constructor(properties: DBClusterProperties);
 }

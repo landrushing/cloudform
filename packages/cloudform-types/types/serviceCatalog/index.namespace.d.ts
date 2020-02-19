@@ -8,8 +8,8 @@ import StackSetConstraint_ from './stackSetConstraint';
 import TagOptionAssociation_ from './tagOptionAssociation';
 import LaunchTemplateConstraint_ from './launchTemplateConstraint';
 import PortfolioPrincipalAssociation_ from './portfolioPrincipalAssociation';
-import LaunchRoleConstraint_ from './launchRoleConstraint';
 import CloudFormationProvisionedProduct_ from './cloudFormationProvisionedProduct';
+import LaunchRoleConstraint_ from './launchRoleConstraint';
 import Portfolio_ from './portfolio';
 import LaunchNotificationConstraint_ from './launchNotificationConstraint';
 export declare namespace ServiceCatalog {
@@ -23,8 +23,8 @@ export declare namespace ServiceCatalog {
     const TagOptionAssociation: typeof TagOptionAssociation_;
     const LaunchTemplateConstraint: typeof LaunchTemplateConstraint_;
     const PortfolioPrincipalAssociation: typeof PortfolioPrincipalAssociation_;
-    const LaunchRoleConstraint: typeof LaunchRoleConstraint_;
     const CloudFormationProvisionedProduct: typeof CloudFormationProvisionedProduct_;
+    const LaunchRoleConstraint: typeof LaunchRoleConstraint_;
     const Portfolio: typeof Portfolio_;
     const LaunchNotificationConstraint: typeof LaunchNotificationConstraint_;
     type PortfolioShare = PortfolioShare_;
@@ -37,8 +37,8 @@ export declare namespace ServiceCatalog {
     type TagOptionAssociation = TagOptionAssociation_;
     type LaunchTemplateConstraint = LaunchTemplateConstraint_;
     type PortfolioPrincipalAssociation = PortfolioPrincipalAssociation_;
-    type LaunchRoleConstraint = LaunchRoleConstraint_;
     type CloudFormationProvisionedProduct = CloudFormationProvisionedProduct_;
+    type LaunchRoleConstraint = LaunchRoleConstraint_;
     type Portfolio = Portfolio_;
     type LaunchNotificationConstraint = LaunchNotificationConstraint_;
 }

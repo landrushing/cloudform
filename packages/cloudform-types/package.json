@@ -1,5 +1,5 @@
 {
-  "name": "cloudform-types",
+  "name": "@landrush/cloudform-types",
   "version": "4.1.0",
   "description": "TypeScript AWS CloudFormation template types - used by cloudform",
   "repository": {
@@ -7,7 +7,7 @@
     "url": "git+https://github.com/bright/cloudform.git"
   },
   "scripts": {
-    "build": "tsc --declaration",
+    "build": "tsc --declaration --emitDeclarationOnly",
     "generate": "ts-node --project tsconfig.json generator/generator.ts"
   },
   "keywords": [

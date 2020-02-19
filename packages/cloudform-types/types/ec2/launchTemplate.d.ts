@@ -69,6 +69,7 @@ export declare class LaunchTemplateData {
     InstanceType?: Value<string>;
     Monitoring?: Monitoring;
     HibernationOptions?: HibernationOptions;
+    MetadataOptions?: MetadataOptions;
     LicenseSpecifications?: List<LicenseSpecification>;
     InstanceInitiatedShutdownBehavior?: Value<string>;
     CpuOptions?: CpuOptions;
@@ -94,12 +95,21 @@ export declare class Monitoring {
     Enabled?: Value<boolean>;
     constructor(properties: Monitoring);
 }
+export declare class MetadataOptions {
+    HttpPutResponseHopLimit?: Value<number>;
+    HttpTokens?: Value<string>;
+    HttpEndpoint?: Value<string>;
+    constructor(properties: MetadataOptions);
+}
 export declare class Placement {
     GroupName?: Value<string>;
     Tenancy?: Value<string>;
+    SpreadDomain?: Value<string>;
+    PartitionNumber?: Value<number>;
     AvailabilityZone?: Value<string>;
     Affinity?: Value<string>;
     HostId?: Value<string>;
+    HostResourceGroupArn?: Value<string>;
     constructor(properties: Placement);
 }
 export declare class CapacityReservationSpecification {
@@ -138,6 +148,7 @@ export declare class CpuOptions {
 }
 export declare class LaunchTemplateElasticInferenceAccelerator {
     Type?: Value<string>;
+    Count?: Value<number>;
     constructor(properties: LaunchTemplateElasticInferenceAccelerator);
 }
 export interface LaunchTemplateProperties {
@@ -158,6 +169,7 @@ export default class LaunchTemplate extends ResourceBase<LaunchTemplatePropertie
     static InstanceMarketOptions: typeof InstanceMarketOptions;
     static CreditSpecification: typeof CreditSpecification;
     static Monitoring: typeof Monitoring;
+    static MetadataOptions: typeof MetadataOptions;
     static Placement: typeof Placement;
     static CapacityReservationSpecification: typeof CapacityReservationSpecification;
     static Ipv6Add: typeof Ipv6Add;

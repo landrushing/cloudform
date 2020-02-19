@@ -1,16 +1,21 @@
 /* Generated from: 
- * ap-northeast-1 (https://d33vqc0rt9ld30.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 4.3.0,
- * ap-southeast-1 (https://doigdx0kgq9el.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 4.3.0,
- * ap-southeast-2 (https://d2stg8d246z9di.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 4.3.0,
- * eu-central-1 (https://d1mta8qj7i28i2.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 4.3.0,
- * eu-west-1 (https://d3teyb21fexa9r.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 4.3.0,
- * eu-west-2 (https://d1742qcu2c1ncx.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 4.3.0,
- * eu-west-3 (https://d2d0mfegowb3wk.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 4.3.0,
- * us-east-1 (https://d1uauaxba7bl26.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 4.3.0,
- * us-east-2 (https://dnwj8swjjbsbt.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 4.3.0,
- * us-west-2 (https://d201a2mn26r7lk.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 4.3.0
+ * ap-northeast-1 (https://d33vqc0rt9ld30.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * ap-northeast-2 (https://d1ane3fvebulky.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * ap-south-1 (https://d2senuesg1djtx.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * ap-southeast-1 (https://doigdx0kgq9el.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * ap-southeast-2 (https://d2stg8d246z9di.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * ca-central-1 (https://d2s8ygphhesbe7.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * eu-central-1 (https://d1mta8qj7i28i2.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * eu-west-1 (https://d3teyb21fexa9r.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * eu-west-2 (https://d1742qcu2c1ncx.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * eu-west-3 (https://d2d0mfegowb3wk.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * sa-east-1 (https://d3c9jyj3w509b0.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * us-east-1 (https://d1uauaxba7bl26.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * us-east-2 (https://dnwj8swjjbsbt.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * us-west-1 (https://d68hl49wbnanq.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0,
+ * us-west-2 (https://d201a2mn26r7lk.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json), version 11.0.0
  */
-   
+
 import {ResourceBase, ResourceTag} from '../resource'
 import {Value, List} from '../dataTypes'
 
@@ -44,6 +49,14 @@ export class BrokerNodeGroupInfo {
     }
 }
 
+export class JmxExporter {
+    EnabledInBroker!: Value<boolean>
+
+    constructor(properties: JmxExporter) {
+        Object.assign(this, properties)
+    }
+}
+
 export class StorageInfo {
     EBSStorageInfo?: EBSStorageInfo
 
@@ -56,6 +69,14 @@ export class EncryptionAtRest {
     DataVolumeKMSKeyId!: Value<string>
 
     constructor(properties: EncryptionAtRest) {
+        Object.assign(this, properties)
+    }
+}
+
+export class NodeExporter {
+    EnabledInBroker!: Value<boolean>
+
+    constructor(properties: NodeExporter) {
         Object.assign(this, properties)
     }
 }
@@ -85,10 +106,27 @@ export class ClientAuthentication {
     }
 }
 
+export class Prometheus {
+    JmxExporter?: JmxExporter
+    NodeExporter?: NodeExporter
+
+    constructor(properties: Prometheus) {
+        Object.assign(this, properties)
+    }
+}
+
 export class Tls {
     CertificateAuthorityArnList?: List<Value<string>>
 
     constructor(properties: Tls) {
+        Object.assign(this, properties)
+    }
+}
+
+export class OpenMonitoring {
+    Prometheus!: Prometheus
+
+    constructor(properties: OpenMonitoring) {
         Object.assign(this, properties)
     }
 }
@@ -99,6 +137,7 @@ export interface ClusterProperties {
     KafkaVersion: Value<string>
     NumberOfBrokerNodes: Value<number>
     EncryptionInfo?: EncryptionInfo
+    OpenMonitoring?: OpenMonitoring
     ClusterName: Value<string>
     ClientAuthentication?: ClientAuthentication
     Tags?: {[key: string]: any}
@@ -109,12 +148,16 @@ export default class Cluster extends ResourceBase<ClusterProperties> {
     static EncryptionInfo = EncryptionInfo
     static ConfigurationInfo = ConfigurationInfo
     static BrokerNodeGroupInfo = BrokerNodeGroupInfo
+    static JmxExporter = JmxExporter
     static StorageInfo = StorageInfo
     static EncryptionAtRest = EncryptionAtRest
+    static NodeExporter = NodeExporter
     static EBSStorageInfo = EBSStorageInfo
     static EncryptionInTransit = EncryptionInTransit
     static ClientAuthentication = ClientAuthentication
+    static Prometheus = Prometheus
     static Tls = Tls
+    static OpenMonitoring = OpenMonitoring
 
     constructor(properties: ClusterProperties) {
         super('AWS::MSK::Cluster', properties)

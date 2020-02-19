@@ -10,6 +10,7 @@ export interface IntegrationProperties {
         [key: string]: any;
     };
     IntegrationUri?: Value<string>;
+    PayloadFormatVersion?: Value<string>;
     CredentialsArn?: Value<string>;
     RequestTemplates?: {
         [key: string]: any;

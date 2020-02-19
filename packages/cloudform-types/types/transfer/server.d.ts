@@ -6,7 +6,10 @@ export declare class IdentityProviderDetails {
     constructor(properties: IdentityProviderDetails);
 }
 export declare class EndpointDetails {
-    VpcEndpointId: Value<string>;
+    AddressAllocationIds?: List<Value<string>>;
+    VpcId?: Value<string>;
+    VpcEndpointId?: Value<string>;
+    SubnetIds?: List<Value<string>>;
     constructor(properties: EndpointDetails);
 }
 export interface ServerProperties {

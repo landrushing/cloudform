@@ -7,6 +7,7 @@ export declare class VpcConfig {
 }
 export declare class ContainerDefinition {
     ContainerHostname?: Value<string>;
+    Mode?: Value<string>;
     Environment?: {
         [key: string]: any;
     };

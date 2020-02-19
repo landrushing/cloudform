@@ -97,6 +97,7 @@ export declare class Lambda {
 }
 export interface DetectorModelProperties {
     DetectorModelDefinition?: DetectorModelDefinition;
+    EvaluationMethod?: Value<string>;
     DetectorModelName?: Value<string>;
     DetectorModelDescription?: Value<string>;
     Key?: Value<string>;

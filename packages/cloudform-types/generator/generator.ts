@@ -65,6 +65,8 @@ function determineTypeScriptType(property: TypeProperties, propertyName: string,
         return innerTypeName('.' + property[typeSuffix])
     }
 
+    if (!property['PrimitiveType'] && !property['PrimitiveItemType'])
+        return
     let primitiveType = property[typeSuffix === 'Type' ? 'PrimitiveType' : 'PrimitiveItemType']!.toLowerCase()
     if (['json', 'map'].includes(primitiveType)) {
         return '{[key: string]: any}'
@@ -157,7 +159,7 @@ function generateFile(fileHeader: string, namespace: string, resourceName: strin
     const generatedClass = generateTopLevelClass(namespace, resourceName, properties, innerTypes)
 
     const template = `${fileHeader}
-   
+
 import {${resourceImports.join(', ')}} from '../resource'
 import {Value, List} from '../dataTypes'
 
@@ -177,8 +179,8 @@ function generateIndexNamespaceFile(fileHeader: string, namespace: string, resou
     const imports = resourceTypeNames.map(typeName => `import ${typeName}_ from './${camelCase(typeName)}'`)
 
     const template = `${fileHeader}
-   
-${imports.join('\n')} 
+
+${imports.join('\n')}
 
 export namespace ${namespace} {
 ${resourceTypeNames.map(typeName => `  export const ${typeName} = ${typeName}_`).join('\n')}
@@ -192,7 +194,7 @@ ${resourceTypeNames.map(typeName => `  export type ${typeName} = ${typeName}_`).
 
 function generateIndexReexportFile(fileHeader: string, namespace: string): void {
     const template = `${fileHeader}
-   
+
 import {${namespace}} from './index.namespace'
 
 export default ${namespace}
@@ -211,8 +213,8 @@ function generateGrandIndexFile(fileHeader: string, indexContent: { [key: string
     })
 
     const template = `${fileHeader}
-   
-${lines.join('\n')} 
+
+${lines.join('\n')}
 
 export default {
 ${Object.keys(indexContent).map(t => `  ${t}`).join(',\n')}

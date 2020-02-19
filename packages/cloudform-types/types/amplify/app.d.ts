@@ -21,7 +21,9 @@ export declare class CustomRule {
 export declare class AutoBranchCreationConfig {
     EnvironmentVariables?: List<EnvironmentVariable>;
     EnableAutoBranchCreation?: Value<boolean>;
+    PullRequestEnvironmentName?: Value<string>;
     AutoBranchCreationPatterns?: List<Value<string>>;
+    EnablePullRequestPreview?: Value<boolean>;
     EnableAutoBuild?: Value<boolean>;
     BuildSpec?: Value<string>;
     Stage?: Value<string>;
