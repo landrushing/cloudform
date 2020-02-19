@@ -7,7 +7,7 @@
     "url": "git+https://github.com/landrushing/cloudform.git"
   },
   "scripts": {
-    "build": "tsc --declaration --emitDeclarationOnly",
+    "build": "tsc --declaration ",
     "generate": "ts-node --project tsconfig.json generator/generator.ts"
   },
   "keywords": [
