@@ -24,5 +24,6 @@
     "node-fetch": "^1.7.3",
     "ts-node": "^5.0.1",
     "typescript": "^2.9.2"
-  }
+  },
+  "gitHead": "3b2eff110b47aa123d64f7f44fe54ee5884e7ecf"
 }

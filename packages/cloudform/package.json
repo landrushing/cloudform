@@ -32,5 +32,6 @@
     "@types/node-fetch": "^2.1.6",
     "lodash": "^4.17.11",
     "node-fetch": "^1.7.3"
-  }
+  },
+  "gitHead": "3b2eff110b47aa123d64f7f44fe54ee5884e7ecf"
 }
