@@ -5,7 +5,7 @@
   "main": "packages/cloudform/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bright/cloudform.git"
+    "url": "git+https://github.com/landrushing/cloudform.git"
   },
   "scripts": {
     "build": "tsc --declaration",
@@ -20,7 +20,7 @@
     "cloudform": "cli/cloudform.js"
   },
   "dependencies": {
-    "cloudform-types": "^4.1.0",
+    "@landrush/cloudform-types": "^4.1.0",
     "jsonminify": "^0.4.1",
     "ts-node": "^5.0.1",
     "typescript": "^2.9.2"

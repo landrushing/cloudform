@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "cloudform-root",
+  "name": "@landrush/cloudform-root",
   "version": "3.0.0",
   "description": "TypeScript-based imperative way to define AWS CloudFormation templates",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bright/cloudform.git"
+    "url": "git+https://github.com/landrushing/cloudform.git"
   },
   "scripts": {
     "publish": "lerna version && lerna publish"

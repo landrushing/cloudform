@@ -4,7 +4,7 @@
   "description": "TypeScript AWS CloudFormation template types - used by cloudform",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bright/cloudform.git"
+    "url": "git+https://github.com/landrushing/cloudform.git"
   },
   "scripts": {
     "build": "tsc --declaration --emitDeclarationOnly",
