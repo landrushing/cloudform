@@ -1,6 +1,6 @@
 {
   "name": "@landrush/cloudform",
-  "version": "4.1.6",
+  "version": "4.1.7",
   "description": "TypeScript-based imperative way to define AWS CloudFormation templates",
   "main": "packages/cloudform/index.js",
   "repository": {
@@ -23,7 +23,7 @@
     "@landrush/cloudform-types": "^4.1.5",
     "jsonminify": "^0.4.1",
     "ts-node": "^5.0.1",
-    "typescript": "^2.9.2"
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "@types/jsonminify": "^0.4.0",
