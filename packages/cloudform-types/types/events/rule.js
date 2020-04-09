@@ -96,6 +96,7 @@ class Rule extends resource_1.ResourceBase {
         super('AWS::Events::Rule', properties || {});
     }
 }
+exports.default = Rule;
 Rule.RunCommandParameters = RunCommandParameters;
 Rule.NetworkConfiguration = NetworkConfiguration;
 Rule.RunCommandTarget = RunCommandTarget;
@@ -108,4 +109,3 @@ Rule.BatchArrayProperties = BatchArrayProperties;
 Rule.EcsParameters = EcsParameters;
 Rule.AwsVpcConfiguration = AwsVpcConfiguration;
 Rule.BatchParameters = BatchParameters;
-exports.default = Rule;

@@ -73,6 +73,7 @@ class ResourceDefinition extends resource_1.ResourceBase {
         super('AWS::Greengrass::ResourceDefinition', properties);
     }
 }
+exports.default = ResourceDefinition;
 ResourceDefinition.SageMakerMachineLearningModelResourceData = SageMakerMachineLearningModelResourceData;
 ResourceDefinition.S3MachineLearningModelResourceData = S3MachineLearningModelResourceData;
 ResourceDefinition.SecretsManagerSecretResourceData = SecretsManagerSecretResourceData;
@@ -82,4 +83,3 @@ ResourceDefinition.ResourceDefinitionVersion = ResourceDefinitionVersion;
 ResourceDefinition.LocalVolumeResourceData = LocalVolumeResourceData;
 ResourceDefinition.ResourceInstance = ResourceInstance;
 ResourceDefinition.ResourceDataContainer = ResourceDataContainer;
-exports.default = ResourceDefinition;

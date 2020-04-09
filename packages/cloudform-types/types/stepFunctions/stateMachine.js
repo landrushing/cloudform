@@ -38,8 +38,8 @@ class StateMachine extends resource_1.ResourceBase {
         super('AWS::StepFunctions::StateMachine', properties);
     }
 }
+exports.default = StateMachine;
 StateMachine.TagsEntry = TagsEntry;
 StateMachine.LoggingConfiguration = LoggingConfiguration;
 StateMachine.CloudWatchLogsLogGroup = CloudWatchLogsLogGroup;
 StateMachine.LogDestination = LogDestination;
-exports.default = StateMachine;

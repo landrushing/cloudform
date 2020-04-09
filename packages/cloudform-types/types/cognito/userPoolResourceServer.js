@@ -26,5 +26,5 @@ class UserPoolResourceServer extends resource_1.ResourceBase {
         super('AWS::Cognito::UserPoolResourceServer', properties);
     }
 }
-UserPoolResourceServer.ResourceServerScopeType = ResourceServerScopeType;
 exports.default = UserPoolResourceServer;
+UserPoolResourceServer.ResourceServerScopeType = ResourceServerScopeType;

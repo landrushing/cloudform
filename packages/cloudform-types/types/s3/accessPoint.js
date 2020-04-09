@@ -34,6 +34,6 @@ class AccessPoint extends resource_1.ResourceBase {
         super('AWS::S3::AccessPoint', properties);
     }
 }
+exports.default = AccessPoint;
 AccessPoint.PublicAccessBlockConfiguration = PublicAccessBlockConfiguration;
 AccessPoint.VpcConfiguration = VpcConfiguration;
-exports.default = AccessPoint;

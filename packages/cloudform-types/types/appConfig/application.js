@@ -17,5 +17,5 @@ class Application extends resource_1.ResourceBase {
         super('AWS::AppConfig::Application', properties);
     }
 }
-Application.Tags = Tags;
 exports.default = Application;
+Application.Tags = Tags;

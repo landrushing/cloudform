@@ -36,6 +36,6 @@ class EventSourceMapping extends resource_1.ResourceBase {
         super('AWS::Lambda::EventSourceMapping', properties);
     }
 }
+exports.default = EventSourceMapping;
 EventSourceMapping.OnFailure = OnFailure;
 EventSourceMapping.DestinationConfig = DestinationConfig;
-exports.default = EventSourceMapping;

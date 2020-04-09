@@ -28,5 +28,5 @@ class MatchmakingConfiguration extends resource_1.ResourceBase {
         super('AWS::GameLift::MatchmakingConfiguration', properties);
     }
 }
-MatchmakingConfiguration.GameProperty = GameProperty;
 exports.default = MatchmakingConfiguration;
+MatchmakingConfiguration.GameProperty = GameProperty;

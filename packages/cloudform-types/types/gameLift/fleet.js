@@ -54,9 +54,9 @@ class Fleet extends resource_1.ResourceBase {
         super('AWS::GameLift::Fleet', properties);
     }
 }
+exports.default = Fleet;
 Fleet.IpPermission = IpPermission;
 Fleet.ServerProcess = ServerProcess;
 Fleet.ResourceCreationLimitPolicy = ResourceCreationLimitPolicy;
 Fleet.CertificateConfiguration = CertificateConfiguration;
 Fleet.RuntimeConfiguration = RuntimeConfiguration;
-exports.default = Fleet;

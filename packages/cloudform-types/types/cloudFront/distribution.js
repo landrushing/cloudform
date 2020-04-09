@@ -149,6 +149,7 @@ class Distribution extends resource_1.ResourceBase {
         super('AWS::CloudFront::Distribution', properties);
     }
 }
+exports.default = Distribution;
 Distribution.Cookies = Cookies;
 Distribution.LambdaFunctionAssociation = LambdaFunctionAssociation;
 Distribution.CacheBehavior = CacheBehavior;
@@ -170,4 +171,3 @@ Distribution.OriginGroup = OriginGroup;
 Distribution.OriginGroupFailoverCriteria = OriginGroupFailoverCriteria;
 Distribution.OriginGroups = OriginGroups;
 Distribution.OriginGroupMembers = OriginGroupMembers;
-exports.default = Distribution;

@@ -45,8 +45,8 @@ class MLTransform extends resource_1.ResourceBase {
         super('AWS::Glue::MLTransform', properties);
     }
 }
+exports.default = MLTransform;
 MLTransform.FindMatchesParameters = FindMatchesParameters;
 MLTransform.TransformParameters = TransformParameters;
 MLTransform.InputRecordTables = InputRecordTables;
 MLTransform.GlueTables = GlueTables;
-exports.default = MLTransform;

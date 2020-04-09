@@ -55,6 +55,7 @@ class Permissions extends resource_1.ResourceBase {
         super('AWS::LakeFormation::Permissions', properties);
     }
 }
+exports.default = Permissions;
 Permissions.DataLocationResource = DataLocationResource;
 Permissions.ColumnWildcard = ColumnWildcard;
 Permissions.DatabaseResource = DatabaseResource;
@@ -62,4 +63,3 @@ Permissions.DataLakePrincipal = DataLakePrincipal;
 Permissions.TableResource = TableResource;
 Permissions.TableWithColumnsResource = TableWithColumnsResource;
 Permissions.Resource = Resource;
-exports.default = Permissions;

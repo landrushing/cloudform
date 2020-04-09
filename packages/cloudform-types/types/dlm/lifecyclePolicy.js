@@ -70,6 +70,7 @@ class LifecyclePolicy extends resource_1.ResourceBase {
         super('AWS::DLM::LifecyclePolicy', properties || {});
     }
 }
+exports.default = LifecyclePolicy;
 LifecyclePolicy.FastRestoreRule = FastRestoreRule;
 LifecyclePolicy.Schedule = Schedule;
 LifecyclePolicy.CrossRegionCopyRetainRule = CrossRegionCopyRetainRule;
@@ -78,4 +79,3 @@ LifecyclePolicy.CreateRule = CreateRule;
 LifecyclePolicy.RetainRule = RetainRule;
 LifecyclePolicy.PolicyDetails = PolicyDetails;
 LifecyclePolicy.Parameters = Parameters;
-exports.default = LifecyclePolicy;

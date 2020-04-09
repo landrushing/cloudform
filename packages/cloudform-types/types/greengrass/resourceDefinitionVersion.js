@@ -67,6 +67,7 @@ class ResourceDefinitionVersion extends resource_1.ResourceBase {
         super('AWS::Greengrass::ResourceDefinitionVersion', properties);
     }
 }
+exports.default = ResourceDefinitionVersion;
 ResourceDefinitionVersion.ResourceInstance = ResourceInstance;
 ResourceDefinitionVersion.SageMakerMachineLearningModelResourceData = SageMakerMachineLearningModelResourceData;
 ResourceDefinitionVersion.LocalDeviceResourceData = LocalDeviceResourceData;
@@ -75,4 +76,3 @@ ResourceDefinitionVersion.LocalVolumeResourceData = LocalVolumeResourceData;
 ResourceDefinitionVersion.ResourceDataContainer = ResourceDataContainer;
 ResourceDefinitionVersion.GroupOwnerSetting = GroupOwnerSetting;
 ResourceDefinitionVersion.SecretsManagerSecretResourceData = SecretsManagerSecretResourceData;
-exports.default = ResourceDefinitionVersion;

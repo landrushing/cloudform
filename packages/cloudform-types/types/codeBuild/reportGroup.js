@@ -35,6 +35,6 @@ class ReportGroup extends resource_1.ResourceBase {
         super('AWS::CodeBuild::ReportGroup', properties);
     }
 }
+exports.default = ReportGroup;
 ReportGroup.ReportExportConfig = ReportExportConfig;
 ReportGroup.S3ReportExportConfig = S3ReportExportConfig;
-exports.default = ReportGroup;

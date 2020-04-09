@@ -29,5 +29,5 @@ class Cluster extends resource_1.ResourceBase {
         super('AWS::EKS::Cluster', properties);
     }
 }
-Cluster.ResourcesVpcConfig = ResourcesVpcConfig;
 exports.default = Cluster;
+Cluster.ResourcesVpcConfig = ResourcesVpcConfig;

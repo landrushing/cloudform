@@ -78,6 +78,7 @@ class Domain extends resource_1.ResourceBase {
         super('AWS::Elasticsearch::Domain', properties || {});
     }
 }
+exports.default = Domain;
 Domain.NodeToNodeEncryptionOptions = NodeToNodeEncryptionOptions;
 Domain.ElasticsearchClusterConfig = ElasticsearchClusterConfig;
 Domain.SnapshotOptions = SnapshotOptions;
@@ -87,4 +88,3 @@ Domain.LogPublishingOption = LogPublishingOption;
 Domain.ZoneAwarenessConfig = ZoneAwarenessConfig;
 Domain.EBSOptions = EBSOptions;
 Domain.EncryptionAtRestOptions = EncryptionAtRestOptions;
-exports.default = Domain;

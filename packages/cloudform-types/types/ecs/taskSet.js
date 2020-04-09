@@ -52,9 +52,9 @@ class TaskSet extends resource_1.ResourceBase {
         super('AWS::ECS::TaskSet', properties);
     }
 }
+exports.default = TaskSet;
 TaskSet.LoadBalancer = LoadBalancer;
 TaskSet.AwsVpcConfiguration = AwsVpcConfiguration;
 TaskSet.NetworkConfiguration = NetworkConfiguration;
 TaskSet.ServiceRegistry = ServiceRegistry;
 TaskSet.Scale = Scale;
-exports.default = TaskSet;

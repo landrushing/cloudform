@@ -19,5 +19,5 @@ class Endpoint extends resource_1.ResourceBase {
         super('AWS::SageMaker::Endpoint', properties);
     }
 }
-Endpoint.VariantProperty = VariantProperty;
 exports.default = Endpoint;
+Endpoint.VariantProperty = VariantProperty;

@@ -57,6 +57,7 @@ class Member extends resource_1.ResourceBase {
         super('AWS::ManagedBlockchain::Member', properties);
     }
 }
+exports.default = Member;
 Member.MemberConfiguration = MemberConfiguration;
 Member.ApprovalThresholdPolicy = ApprovalThresholdPolicy;
 Member.NetworkFrameworkConfiguration = NetworkFrameworkConfiguration;
@@ -65,4 +66,3 @@ Member.MemberFrameworkConfiguration = MemberFrameworkConfiguration;
 Member.NetworkFabricConfiguration = NetworkFabricConfiguration;
 Member.VotingPolicy = VotingPolicy;
 Member.MemberFabricConfiguration = MemberFabricConfiguration;
-exports.default = Member;

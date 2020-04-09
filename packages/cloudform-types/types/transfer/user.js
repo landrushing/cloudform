@@ -29,5 +29,5 @@ class User extends resource_1.ResourceBase {
         super('AWS::Transfer::User', properties);
     }
 }
-User.HomeDirectoryMapEntry = HomeDirectoryMapEntry;
 exports.default = User;
+User.HomeDirectoryMapEntry = HomeDirectoryMapEntry;

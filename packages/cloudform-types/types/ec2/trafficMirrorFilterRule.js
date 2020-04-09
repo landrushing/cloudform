@@ -29,5 +29,5 @@ class TrafficMirrorFilterRule extends resource_1.ResourceBase {
         super('AWS::EC2::TrafficMirrorFilterRule', properties);
     }
 }
-TrafficMirrorFilterRule.TrafficMirrorPortRange = TrafficMirrorPortRange;
 exports.default = TrafficMirrorFilterRule;
+TrafficMirrorFilterRule.TrafficMirrorPortRange = TrafficMirrorPortRange;

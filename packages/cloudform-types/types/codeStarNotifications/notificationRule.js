@@ -29,5 +29,5 @@ class NotificationRule extends resource_1.ResourceBase {
         super('AWS::CodeStarNotifications::NotificationRule', properties);
     }
 }
-NotificationRule.Target = Target;
 exports.default = NotificationRule;
+NotificationRule.Target = Target;

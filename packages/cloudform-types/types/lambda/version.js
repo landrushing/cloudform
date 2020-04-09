@@ -30,5 +30,5 @@ class Version extends resource_1.ResourceBase {
         super('AWS::Lambda::Version', properties);
     }
 }
-Version.ProvisionedConcurrencyConfiguration = ProvisionedConcurrencyConfiguration;
 exports.default = Version;
+Version.ProvisionedConcurrencyConfiguration = ProvisionedConcurrencyConfiguration;

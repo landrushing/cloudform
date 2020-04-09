@@ -35,6 +35,6 @@ class Nodegroup extends resource_1.ResourceBase {
         super('AWS::EKS::Nodegroup', properties);
     }
 }
+exports.default = Nodegroup;
 Nodegroup.ScalingConfig = ScalingConfig;
 Nodegroup.RemoteAccess = RemoteAccess;
-exports.default = Nodegroup;

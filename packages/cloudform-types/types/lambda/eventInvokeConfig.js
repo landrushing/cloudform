@@ -42,7 +42,7 @@ class EventInvokeConfig extends resource_1.ResourceBase {
         super('AWS::Lambda::EventInvokeConfig', properties);
     }
 }
+exports.default = EventInvokeConfig;
 EventInvokeConfig.OnFailure = OnFailure;
 EventInvokeConfig.OnSuccess = OnSuccess;
 EventInvokeConfig.DestinationConfig = DestinationConfig;
-exports.default = EventInvokeConfig;

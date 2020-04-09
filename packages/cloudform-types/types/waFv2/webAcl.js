@@ -244,6 +244,7 @@ class WebACL extends resource_1.ResourceBase {
         super('AWS::WAFv2::WebACL', properties);
     }
 }
+exports.default = WebACL;
 WebACL.RuleAction = RuleAction;
 WebACL.ManagedRuleGroupStatement = ManagedRuleGroupStatement;
 WebACL.TextTransformation = TextTransformation;
@@ -281,4 +282,3 @@ WebACL.IPSetReferenceStatement = IPSetReferenceStatement;
 WebACL.AndStatementOne = AndStatementOne;
 WebACL.StatementThree = StatementThree;
 WebACL.TagList = TagList;
-exports.default = WebACL;

@@ -35,6 +35,6 @@ class Api extends resource_1.ResourceBase {
         super('AWS::ApiGatewayV2::Api', properties || {});
     }
 }
+exports.default = Api;
 Api.Cors = Cors;
 Api.BodyS3Location = BodyS3Location;
-exports.default = Api;

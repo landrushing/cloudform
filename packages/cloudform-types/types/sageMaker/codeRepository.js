@@ -27,5 +27,5 @@ class CodeRepository extends resource_1.ResourceBase {
         super('AWS::SageMaker::CodeRepository', properties);
     }
 }
-CodeRepository.GitConfig = GitConfig;
 exports.default = CodeRepository;
+CodeRepository.GitConfig = GitConfig;

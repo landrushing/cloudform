@@ -34,6 +34,6 @@ class GameSessionQueue extends resource_1.ResourceBase {
         super('AWS::GameLift::GameSessionQueue', properties);
     }
 }
+exports.default = GameSessionQueue;
 GameSessionQueue.Destination = Destination;
 GameSessionQueue.PlayerLatencyPolicy = PlayerLatencyPolicy;
-exports.default = GameSessionQueue;

@@ -25,5 +25,5 @@ class Group extends resource_1.ResourceBase {
         super('AWS::Greengrass::Group', properties);
     }
 }
-Group.GroupVersion = GroupVersion;
 exports.default = Group;
+Group.GroupVersion = GroupVersion;

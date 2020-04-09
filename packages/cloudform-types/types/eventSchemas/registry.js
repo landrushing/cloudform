@@ -19,5 +19,5 @@ class Registry extends resource_1.ResourceBase {
         super('AWS::EventSchemas::Registry', properties || {});
     }
 }
-Registry.TagsEntry = TagsEntry;
 exports.default = Registry;
+Registry.TagsEntry = TagsEntry;

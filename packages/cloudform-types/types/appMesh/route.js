@@ -129,6 +129,7 @@ class Route extends resource_1.ResourceBase {
         super('AWS::AppMesh::Route', properties);
     }
 }
+exports.default = Route;
 Route.GrpcRetryPolicy = GrpcRetryPolicy;
 Route.Duration = Duration;
 Route.WeightedTarget = WeightedTarget;
@@ -147,4 +148,3 @@ Route.GrpcRouteMatch = GrpcRouteMatch;
 Route.HttpRoute = HttpRoute;
 Route.MatchRange = MatchRange;
 Route.TcpRouteAction = TcpRouteAction;
-exports.default = Route;

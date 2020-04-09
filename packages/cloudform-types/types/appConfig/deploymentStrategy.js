@@ -17,5 +17,5 @@ class DeploymentStrategy extends resource_1.ResourceBase {
         super('AWS::AppConfig::DeploymentStrategy', properties);
     }
 }
-DeploymentStrategy.Tags = Tags;
 exports.default = DeploymentStrategy;
+DeploymentStrategy.Tags = Tags;

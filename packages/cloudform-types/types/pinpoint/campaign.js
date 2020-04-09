@@ -98,6 +98,7 @@ class Campaign extends resource_1.ResourceBase {
         super('AWS::Pinpoint::Campaign', properties);
     }
 }
+exports.default = Campaign;
 Campaign.MetricDimension = MetricDimension;
 Campaign.SetDimension = SetDimension;
 Campaign.EventDimensions = EventDimensions;
@@ -112,4 +113,3 @@ Campaign.CampaignEventFilter = CampaignEventFilter;
 Campaign.CampaignSmsMessage = CampaignSmsMessage;
 Campaign.CampaignEmailMessage = CampaignEmailMessage;
 Campaign.WriteTreatmentResource = WriteTreatmentResource;
-exports.default = Campaign;

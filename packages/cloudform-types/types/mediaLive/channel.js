@@ -168,6 +168,7 @@ class Channel extends resource_1.ResourceBase {
         super('AWS::MediaLive::Channel', properties || {});
     }
 }
+exports.default = Channel;
 Channel.MediaPackageOutputDestinationSettings = MediaPackageOutputDestinationSettings;
 Channel.HlsInputSettings = HlsInputSettings;
 Channel.VideoSelectorProgramId = VideoSelectorProgramId;
@@ -193,4 +194,3 @@ Channel.VideoSelector = VideoSelector;
 Channel.OutputDestinationSettings = OutputDestinationSettings;
 Channel.OutputDestination = OutputDestination;
 Channel.CaptionSelector = CaptionSelector;
-exports.default = Channel;

@@ -28,5 +28,5 @@ class OrganizationConformancePack extends resource_1.ResourceBase {
         super('AWS::Config::OrganizationConformancePack', properties);
     }
 }
-OrganizationConformancePack.ConformancePackInputParameter = ConformancePackInputParameter;
 exports.default = OrganizationConformancePack;
+OrganizationConformancePack.ConformancePackInputParameter = ConformancePackInputParameter;

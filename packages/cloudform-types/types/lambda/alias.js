@@ -42,7 +42,7 @@ class Alias extends resource_1.ResourceBase {
         super('AWS::Lambda::Alias', properties);
     }
 }
+exports.default = Alias;
 Alias.ProvisionedConcurrencyConfiguration = ProvisionedConcurrencyConfiguration;
 Alias.AliasRoutingConfiguration = AliasRoutingConfiguration;
 Alias.VersionWeight = VersionWeight;
-exports.default = Alias;

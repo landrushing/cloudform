@@ -19,5 +19,5 @@ class DataLakeSettings extends resource_1.ResourceBase {
         super('AWS::LakeFormation::DataLakeSettings', properties || {});
     }
 }
-DataLakeSettings.DataLakePrincipal = DataLakePrincipal;
 exports.default = DataLakeSettings;
+DataLakeSettings.DataLakePrincipal = DataLakePrincipal;

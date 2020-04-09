@@ -31,6 +31,6 @@ class LoggerDefinition extends resource_1.ResourceBase {
         super('AWS::Greengrass::LoggerDefinition', properties);
     }
 }
+exports.default = LoggerDefinition;
 LoggerDefinition.Logger = Logger;
 LoggerDefinition.LoggerDefinitionVersion = LoggerDefinitionVersion;
-exports.default = LoggerDefinition;

@@ -17,5 +17,5 @@ class Deployment extends resource_1.ResourceBase {
         super('AWS::AppConfig::Deployment', properties);
     }
 }
-Deployment.Tags = Tags;
 exports.default = Deployment;
+Deployment.Tags = Tags;

@@ -35,6 +35,6 @@ class OrganizationConfigRule extends resource_1.ResourceBase {
         super('AWS::Config::OrganizationConfigRule', properties);
     }
 }
+exports.default = OrganizationConfigRule;
 OrganizationConfigRule.OrganizationManagedRuleMetadata = OrganizationManagedRuleMetadata;
 OrganizationConfigRule.OrganizationCustomRuleMetadata = OrganizationCustomRuleMetadata;
-exports.default = OrganizationConfigRule;

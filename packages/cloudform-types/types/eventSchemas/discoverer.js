@@ -19,5 +19,5 @@ class Discoverer extends resource_1.ResourceBase {
         super('AWS::EventSchemas::Discoverer', properties);
     }
 }
-Discoverer.TagsEntry = TagsEntry;
 exports.default = Discoverer;
+Discoverer.TagsEntry = TagsEntry;

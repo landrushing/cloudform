@@ -36,6 +36,6 @@ class DBCluster extends resource_1.ResourceBase {
         super('AWS::RDS::DBCluster', properties);
     }
 }
+exports.default = DBCluster;
 DBCluster.ScalingConfiguration = ScalingConfiguration;
 DBCluster.DBClusterRole = DBClusterRole;
-exports.default = DBCluster;

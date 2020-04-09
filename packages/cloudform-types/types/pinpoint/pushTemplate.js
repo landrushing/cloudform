@@ -30,7 +30,7 @@ class PushTemplate extends resource_1.ResourceBase {
         super('AWS::Pinpoint::PushTemplate', properties);
     }
 }
+exports.default = PushTemplate;
 PushTemplate.AndroidPushNotificationTemplate = AndroidPushNotificationTemplate;
 PushTemplate.DefaultPushNotificationTemplate = DefaultPushNotificationTemplate;
 PushTemplate.APNSPushNotificationTemplate = APNSPushNotificationTemplate;
-exports.default = PushTemplate;

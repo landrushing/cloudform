@@ -86,6 +86,7 @@ class Segment extends resource_1.ResourceBase {
         super('AWS::Pinpoint::Segment', properties);
     }
 }
+exports.default = Segment;
 Segment.Coordinates = Coordinates;
 Segment.SegmentDimensions = SegmentDimensions;
 Segment.SourceSegments = SourceSegments;
@@ -98,4 +99,3 @@ Segment.Groups = Groups;
 Segment.Behavior = Behavior;
 Segment.Location = Location;
 Segment.SegmentGroups = SegmentGroups;
-exports.default = Segment;

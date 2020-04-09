@@ -32,7 +32,7 @@ class Workteam extends resource_1.ResourceBase {
         super('AWS::SageMaker::Workteam', properties || {});
     }
 }
+exports.default = Workteam;
 Workteam.CognitoMemberDefinition = CognitoMemberDefinition;
 Workteam.MemberDefinition = MemberDefinition;
 Workteam.NotificationConfiguration = NotificationConfiguration;
-exports.default = Workteam;

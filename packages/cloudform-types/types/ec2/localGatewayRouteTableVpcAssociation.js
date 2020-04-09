@@ -26,5 +26,5 @@ class LocalGatewayRouteTableVPCAssociation extends resource_1.ResourceBase {
         super('AWS::EC2::LocalGatewayRouteTableVPCAssociation', properties);
     }
 }
-LocalGatewayRouteTableVPCAssociation.Tags = Tags;
 exports.default = LocalGatewayRouteTableVPCAssociation;
+LocalGatewayRouteTableVPCAssociation.Tags = Tags;

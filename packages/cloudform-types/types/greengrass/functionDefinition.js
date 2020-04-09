@@ -67,6 +67,7 @@ class FunctionDefinition extends resource_1.ResourceBase {
         super('AWS::Greengrass::FunctionDefinition', properties);
     }
 }
+exports.default = FunctionDefinition;
 FunctionDefinition.Execution = Execution;
 FunctionDefinition.FunctionConfiguration = FunctionConfiguration;
 FunctionDefinition.Environment = Environment;
@@ -75,4 +76,3 @@ FunctionDefinition.RunAs = RunAs;
 FunctionDefinition.DefaultConfig = DefaultConfig;
 FunctionDefinition.Function = Function;
 FunctionDefinition.ResourceAccessPolicy = ResourceAccessPolicy;
-exports.default = FunctionDefinition;

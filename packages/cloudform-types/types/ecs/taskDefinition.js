@@ -174,6 +174,7 @@ class TaskDefinition extends resource_1.ResourceBase {
         super('AWS::ECS::TaskDefinition', properties || {});
     }
 }
+exports.default = TaskDefinition;
 TaskDefinition.LogConfiguration = LogConfiguration;
 TaskDefinition.FirelensConfiguration = FirelensConfiguration;
 TaskDefinition.Device = Device;
@@ -199,4 +200,3 @@ TaskDefinition.ContainerDependency = ContainerDependency;
 TaskDefinition.ProxyConfiguration = ProxyConfiguration;
 TaskDefinition.HostVolumeProperties = HostVolumeProperties;
 TaskDefinition.RepositoryCredentials = RepositoryCredentials;
-exports.default = TaskDefinition;

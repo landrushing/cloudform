@@ -42,7 +42,7 @@ class ScalableTarget extends resource_1.ResourceBase {
         super('AWS::ApplicationAutoScaling::ScalableTarget', properties);
     }
 }
+exports.default = ScalableTarget;
 ScalableTarget.SuspendedState = SuspendedState;
 ScalableTarget.ScheduledAction = ScheduledAction;
 ScalableTarget.ScalableTargetAction = ScalableTargetAction;
-exports.default = ScalableTarget;

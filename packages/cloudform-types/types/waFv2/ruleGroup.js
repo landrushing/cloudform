@@ -208,6 +208,7 @@ class RuleGroup extends resource_1.ResourceBase {
         super('AWS::WAFv2::RuleGroup', properties);
     }
 }
+exports.default = RuleGroup;
 RuleGroup.RateBasedStatementTwo = RateBasedStatementTwo;
 RuleGroup.XssMatchStatement = XssMatchStatement;
 RuleGroup.OrStatementOne = OrStatementOne;
@@ -239,4 +240,3 @@ RuleGroup.AndStatementOne = AndStatementOne;
 RuleGroup.TagList = TagList;
 RuleGroup.SizeConstraintStatement = SizeConstraintStatement;
 RuleGroup.StatementTwo = StatementTwo;
-exports.default = RuleGroup;

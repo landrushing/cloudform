@@ -40,7 +40,7 @@ class CertificateAuthority extends resource_1.ResourceBase {
         super('AWS::ACMPCA::CertificateAuthority', properties);
     }
 }
+exports.default = CertificateAuthority;
 CertificateAuthority.Subject = Subject;
 CertificateAuthority.RevocationConfiguration = RevocationConfiguration;
 CertificateAuthority.CrlConfiguration = CrlConfiguration;
-exports.default = CertificateAuthority;

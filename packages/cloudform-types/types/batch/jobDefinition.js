@@ -101,6 +101,7 @@ class JobDefinition extends resource_1.ResourceBase {
         super('AWS::Batch::JobDefinition', properties);
     }
 }
+exports.default = JobDefinition;
 JobDefinition.Volumes = Volumes;
 JobDefinition.ContainerProperties = ContainerProperties;
 JobDefinition.ResourceRequirement = ResourceRequirement;
@@ -114,4 +115,3 @@ JobDefinition.RetryStrategy = RetryStrategy;
 JobDefinition.Timeout = Timeout;
 JobDefinition.NodeRangeProperty = NodeRangeProperty;
 JobDefinition.Device = Device;
-exports.default = JobDefinition;

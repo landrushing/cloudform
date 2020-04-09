@@ -26,5 +26,5 @@ class UserPoolDomain extends resource_1.ResourceBase {
         super('AWS::Cognito::UserPoolDomain', properties);
     }
 }
-UserPoolDomain.CustomDomainConfigType = CustomDomainConfigType;
 exports.default = UserPoolDomain;
+UserPoolDomain.CustomDomainConfigType = CustomDomainConfigType;

@@ -29,5 +29,5 @@ class JobTemplate extends resource_1.ResourceBase {
         super('AWS::MediaConvert::JobTemplate', properties);
     }
 }
-JobTemplate.AccelerationSettings = AccelerationSettings;
 exports.default = JobTemplate;
+JobTemplate.AccelerationSettings = AccelerationSettings;

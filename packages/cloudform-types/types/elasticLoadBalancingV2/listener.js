@@ -78,6 +78,7 @@ class Listener extends resource_1.ResourceBase {
         super('AWS::ElasticLoadBalancingV2::Listener', properties);
     }
 }
+exports.default = Listener;
 Listener.AuthenticateCognitoConfig = AuthenticateCognitoConfig;
 Listener.Action = Action;
 Listener.ForwardConfig = ForwardConfig;
@@ -87,4 +88,3 @@ Listener.FixedResponseConfig = FixedResponseConfig;
 Listener.Certificate = Certificate;
 Listener.TargetGroupStickinessConfig = TargetGroupStickinessConfig;
 Listener.TargetGroupTuple = TargetGroupTuple;
-exports.default = Listener;

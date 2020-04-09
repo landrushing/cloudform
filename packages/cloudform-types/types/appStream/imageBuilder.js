@@ -34,7 +34,7 @@ class ImageBuilder extends resource_1.ResourceBase {
         super('AWS::AppStream::ImageBuilder', properties);
     }
 }
+exports.default = ImageBuilder;
 ImageBuilder.VpcConfig = VpcConfig;
 ImageBuilder.AccessEndpoint = AccessEndpoint;
 ImageBuilder.DomainJoinInfo = DomainJoinInfo;
-exports.default = ImageBuilder;

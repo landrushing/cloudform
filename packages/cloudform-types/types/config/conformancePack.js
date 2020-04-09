@@ -28,5 +28,5 @@ class ConformancePack extends resource_1.ResourceBase {
         super('AWS::Config::ConformancePack', properties);
     }
 }
-ConformancePack.ConformancePackInputParameter = ConformancePackInputParameter;
 exports.default = ConformancePack;
+ConformancePack.ConformancePackInputParameter = ConformancePackInputParameter;

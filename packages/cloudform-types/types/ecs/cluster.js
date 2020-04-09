@@ -30,5 +30,5 @@ class Cluster extends resource_1.ResourceBase {
         super('AWS::ECS::Cluster', properties || {});
     }
 }
-Cluster.ClusterSetting = ClusterSetting;
 exports.default = Cluster;
+Cluster.ClusterSetting = ClusterSetting;

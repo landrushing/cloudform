@@ -23,6 +23,6 @@ class ConfigurationProfile extends resource_1.ResourceBase {
         super('AWS::AppConfig::ConfigurationProfile', properties);
     }
 }
+exports.default = ConfigurationProfile;
 ConfigurationProfile.Validators = Validators;
 ConfigurationProfile.Tags = Tags;
-exports.default = ConfigurationProfile;

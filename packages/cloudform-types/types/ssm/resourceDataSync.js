@@ -41,7 +41,7 @@ class ResourceDataSync extends resource_1.ResourceBase {
         super('AWS::SSM::ResourceDataSync', properties);
     }
 }
+exports.default = ResourceDataSync;
 ResourceDataSync.S3Destination = S3Destination;
 ResourceDataSync.AwsOrganizationsSource = AwsOrganizationsSource;
 ResourceDataSync.SyncSource = SyncSource;
-exports.default = ResourceDataSync;

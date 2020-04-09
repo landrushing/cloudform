@@ -23,6 +23,6 @@ class Environment extends resource_1.ResourceBase {
         super('AWS::AppConfig::Environment', properties);
     }
 }
+exports.default = Environment;
 Environment.Monitors = Monitors;
 Environment.Tags = Tags;
-exports.default = Environment;

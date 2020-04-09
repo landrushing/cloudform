@@ -68,6 +68,7 @@ class UserPoolRiskConfigurationAttachment extends resource_1.ResourceBase {
         super('AWS::Cognito::UserPoolRiskConfigurationAttachment', properties);
     }
 }
+exports.default = UserPoolRiskConfigurationAttachment;
 UserPoolRiskConfigurationAttachment.AccountTakeoverActionsType = AccountTakeoverActionsType;
 UserPoolRiskConfigurationAttachment.RiskExceptionConfigurationType = RiskExceptionConfigurationType;
 UserPoolRiskConfigurationAttachment.NotifyEmailType = NotifyEmailType;
@@ -76,4 +77,3 @@ UserPoolRiskConfigurationAttachment.CompromisedCredentialsRiskConfigurationType 
 UserPoolRiskConfigurationAttachment.CompromisedCredentialsActionsType = CompromisedCredentialsActionsType;
 UserPoolRiskConfigurationAttachment.NotifyConfigurationType = NotifyConfigurationType;
 UserPoolRiskConfigurationAttachment.AccountTakeoverRiskConfigurationType = AccountTakeoverRiskConfigurationType;
-exports.default = UserPoolRiskConfigurationAttachment;

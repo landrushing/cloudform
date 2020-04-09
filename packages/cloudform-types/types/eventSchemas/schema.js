@@ -19,5 +19,5 @@ class Schema extends resource_1.ResourceBase {
         super('AWS::EventSchemas::Schema', properties);
     }
 }
-Schema.TagsEntry = TagsEntry;
 exports.default = Schema;
+Schema.TagsEntry = TagsEntry;

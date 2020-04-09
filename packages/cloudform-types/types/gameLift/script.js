@@ -28,5 +28,5 @@ class Script extends resource_1.ResourceBase {
         super('AWS::GameLift::Script', properties);
     }
 }
-Script.S3Location = S3Location;
 exports.default = Script;
+Script.S3Location = S3Location;

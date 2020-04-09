@@ -28,5 +28,5 @@ class Certificate extends resource_1.ResourceBase {
         super('AWS::ACMPCA::Certificate', properties);
     }
 }
-Certificate.Validity = Validity;
 exports.default = Certificate;
+Certificate.Validity = Validity;

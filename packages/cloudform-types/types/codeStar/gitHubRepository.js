@@ -35,6 +35,6 @@ class GitHubRepository extends resource_1.ResourceBase {
         super('AWS::CodeStar::GitHubRepository', properties);
     }
 }
+exports.default = GitHubRepository;
 GitHubRepository.Code = Code;
 GitHubRepository.S3 = S3;
-exports.default = GitHubRepository;

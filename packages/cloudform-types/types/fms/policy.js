@@ -41,7 +41,7 @@ class Policy extends resource_1.ResourceBase {
         super('AWS::FMS::Policy', properties);
     }
 }
+exports.default = Policy;
 Policy.ResourceTag = resource_1.ResourceTag;
 Policy.IEMap = IEMap;
 Policy.PolicyTag = PolicyTag;
-exports.default = Policy;

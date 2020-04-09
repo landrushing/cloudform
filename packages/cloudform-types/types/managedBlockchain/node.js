@@ -15,5 +15,5 @@ class Node extends resource_1.ResourceBase {
         super('AWS::ManagedBlockchain::Node', properties);
     }
 }
-Node.NodeConfiguration = NodeConfiguration;
 exports.default = Node;
+Node.NodeConfiguration = NodeConfiguration;

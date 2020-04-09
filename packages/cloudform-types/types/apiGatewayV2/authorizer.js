@@ -29,5 +29,5 @@ class Authorizer extends resource_1.ResourceBase {
         super('AWS::ApiGatewayV2::Authorizer', properties);
     }
 }
-Authorizer.JWTConfiguration = JWTConfiguration;
 exports.default = Authorizer;
+Authorizer.JWTConfiguration = JWTConfiguration;

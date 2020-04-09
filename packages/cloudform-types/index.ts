@@ -1,5 +1,5 @@
-import Template from "./types/template"
-export type Template = Template
+import templateType from "./types/template"
+export type Template = templateType
 
 import * as _Fn from './types/functions'
 export const Fn = _Fn

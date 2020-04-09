@@ -35,7 +35,7 @@ class FileSystem extends resource_1.ResourceBase {
         super('AWS::FSx::FileSystem', properties);
     }
 }
+exports.default = FileSystem;
 FileSystem.LustreConfiguration = LustreConfiguration;
 FileSystem.SelfManagedActiveDirectoryConfiguration = SelfManagedActiveDirectoryConfiguration;
 FileSystem.WindowsConfiguration = WindowsConfiguration;
-exports.default = FileSystem;

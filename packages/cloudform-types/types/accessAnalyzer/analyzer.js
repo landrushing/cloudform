@@ -34,6 +34,6 @@ class Analyzer extends resource_1.ResourceBase {
         super('AWS::AccessAnalyzer::Analyzer', properties);
     }
 }
+exports.default = Analyzer;
 Analyzer.ArchiveRule = ArchiveRule;
 Analyzer.Filter = Filter;
-exports.default = Analyzer;

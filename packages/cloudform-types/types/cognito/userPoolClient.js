@@ -26,5 +26,5 @@ class UserPoolClient extends resource_1.ResourceBase {
         super('AWS::Cognito::UserPoolClient', properties);
     }
 }
-UserPoolClient.AnalyticsConfiguration = AnalyticsConfiguration;
 exports.default = UserPoolClient;
+UserPoolClient.AnalyticsConfiguration = AnalyticsConfiguration;

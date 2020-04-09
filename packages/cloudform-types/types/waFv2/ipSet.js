@@ -34,6 +34,6 @@ class IPSet extends resource_1.ResourceBase {
         super('AWS::WAFv2::IPSet', properties);
     }
 }
+exports.default = IPSet;
 IPSet.TagList = TagList;
 IPSet.IPAddresses = IPAddresses;
-exports.default = IPSet;

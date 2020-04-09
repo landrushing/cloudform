@@ -36,6 +36,6 @@ class DBInstance extends resource_1.ResourceBase {
         super('AWS::RDS::DBInstance', properties);
     }
 }
+exports.default = DBInstance;
 DBInstance.DBInstanceRole = DBInstanceRole;
 DBInstance.ProcessorFeature = ProcessorFeature;
-exports.default = DBInstance;

@@ -40,7 +40,7 @@ class RegexPatternSet extends resource_1.ResourceBase {
         super('AWS::WAFv2::RegexPatternSet', properties);
     }
 }
+exports.default = RegexPatternSet;
 RegexPatternSet.RegularExpressionList = RegularExpressionList;
 RegexPatternSet.TagList = TagList;
 RegexPatternSet.Regex = Regex;
-exports.default = RegexPatternSet;
